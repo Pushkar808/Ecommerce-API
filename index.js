@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const app=express();
 const DBconfig=require('./config/db_config');//database configuration
 //port to connect with port
-const port=8000;
+const port=process.env.PORT || 8000;
 //converts request body to JSON, it also carries out some other functionalities like: converting form-data to JSON etc.
 app.use(express.urlencoded({ extended: true }));
 //including middleware for router to route all types of calls
