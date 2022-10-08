@@ -1,2 +1,1 @@
-// heroku file for hosting
-web:index.js
+web:node index.js
